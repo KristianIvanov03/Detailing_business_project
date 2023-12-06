@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const AppointmentTemplate = require("../models/appointmentTemplateSchema");
 
-
+//function for creating a template day. 
 const createTemplate = async (req, res) => {
     const {day, timeSlots} = req.body
 
@@ -13,6 +13,8 @@ const createTemplate = async (req, res) => {
     }
 }
 
+
+//function for retrieveing the template
 const getHours = async (req, res) => {
     const hours = await AppointmentTemplate.find({});
     res.status(200).json(hours);

@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
+//MongoDb model saved hours by users
 const userAppointmentSchema = new Schema({
     user_id: {
         type: String,

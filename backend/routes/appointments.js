@@ -1,7 +1,8 @@
 const express = require("express")
-const router = express.Router();
-
 const {createTemplate, getHours} = require("../controllers/appointmentController")
+
+//router for appointments
+const router = express.Router();
 
 router.post("/template", createTemplate);
 
