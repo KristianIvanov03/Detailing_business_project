@@ -65,16 +65,20 @@ const createAppointment = async (req, res) => {
     }
 }
 
+//function for canceling appointed hour
 const deleteAppointment = async (req,res) => {
+    //retrieving id of appointment
     const {_id} = req.params;
-
+    //checks if id is correct
     if(!mongoose.Types.ObjectId.isValid(_id)){
-        return res.status(404).json({error: "No such appointed hour"})
+        return res.status(404).json({error: "Inaccurate id"})
     }
+    //checks if there is an appointed hour if there is one, then it is deleted
     const appointedHour = await UserAppointment.findOneAndDelete({_id});
     if (!appointedHour) {
         return res.status(404).json({error: "No such appointed hour"});
     }
+    //adding back the timeSlot which was removed when the appointment was created
     const dayOfWeek = await AppointmentTemplate.find({day: appointedHour.day});
     const array = dayOfWeek[0].timeSlots;
     array.push(appointedHour.hour);
