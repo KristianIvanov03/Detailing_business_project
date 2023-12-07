@@ -27,9 +27,12 @@ const getHoursForUser = async (req, res) => {
     res.status(400).json({appointment});
 }
 
+//function for appoining hour
 const createAppointment = async (req, res) => {
     const {day, hour, user_id} = req.body;
 
+
+    //checking if all of the input fields are not empty
     let emptyFields = [];
     if(!day){
         emptyFields.push("day")
@@ -40,15 +43,20 @@ const createAppointment = async (req, res) => {
     if(emptyFields.length > 0){
         return res.status(400).json({error: "Please fill in all the fields", emptyFields});
     }
+    //retrieving the day for the appointment
     const searchIfFree = await AppointmentTemplate.find({day});
     //checks to see if there is an available slot on that day
     if(!searchIfFree[0].timeSlots.includes(hour)){
         return res.status(400).json({error: "This hour is already appointed"});;
     }
     try {
+        //retrieving the timeslots for that day
         const hours = searchIfFree[0].timeSlots;
+        //removing the new appointed hour from the template
         const filteredArray = hours.filter(item => item !== hour);
+        //updating the template 
         const reworkedTemplate = await AppointmentTemplate.findOneAndUpdate({day},{$set: {timeSlots: filteredArray}})
+        //creating and saving the appointed hour
         const appointedHour = await UserAppointment.create({user_id, day, hour})
         
         res.status(200).json(appointedHour);
