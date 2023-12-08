@@ -1,8 +1,10 @@
+import {Link} from "react-router-dom"
+
 const NavBar = () => {
     return (
         <header>
             <div className="logo">
-                <h2>Revive & Shine <span>Detailing</span></h2>
+                <Link><h2>Revive & Shine <span>Detailing</span></h2></Link>
             </div>
             <nav>
                 <ul>

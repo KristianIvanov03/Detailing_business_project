@@ -13,8 +13,8 @@
 
 /* Navigational bar */
 header {
-  background-color: var(--primary-color); /* Dark Blue-Gray (Navbar Background Color) */
-  color: var(--neutral-color); /* Light Gray (Text color for navbar) */
+  background-color: var(--primary-color); 
+  color: var(--neutral-color); 
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -23,16 +23,23 @@ header {
 }
 
 .logo {
-  flex-grow: 1; /* Allow the logo to grow and take available space */
+  flex-grow: 1;
 }
 
 header h2 {
   margin: 0;
   font-size: 24px;
+  text-decoration: none;
+  color: var(--neutral-color);
+}
+
+header a{
+  text-decoration: none;
 }
 
 header span {
-  color: #3498db; /* Calming Blue (Secondary Color) - Apply the color to the span */
+  color: #3498db;
+
 }
 nav{
   flex-grow: 1;
@@ -46,32 +53,32 @@ nav ul {
 nav li {
   cursor: pointer;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  transition: color 0.3s ease; 
 }
 
 nav li:hover {
-  color: #3498db; /* Calming Blue (Secondary Color) - Change color on hover */
+  color: #3498db; 
 }
 
 header button {
-  background-color: var(--accent-color); /* Bold Red (Button Background Color) */
-  color: var(--neutral-color); /* Light Gray (Text color for buttons) */
+  background-color: var(--accent-color); 
+  color: var(--neutral-color); 
   padding: 8px 16px;
   margin-left: 10px;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+  transition: background-color 0.3s ease; 
 }
 
 header button:hover {
-  background-color: #c0392b; /* Darker Red - Change background color on hover */
+  background-color: #c0392b; 
 }
 
 @media screen and (max-width: 768px) {
   nav {
-    margin-top: 10px; /* Add some space above the navigation menu */
-    width: 100%; /* Make the navigation menu take full width */
+    margin-top: 10px; 
+    width: 100%; 
   }
 
   .logo{
@@ -80,14 +87,27 @@ header button:hover {
   }
 
   nav ul {
-    justify-content: center; /* Center the navigation items */
+    justify-content: center;
   }
 
   header button {
-    margin-top: 10px; /* Add some space above the buttons */
-    margin-left: 0; /* Remove the left margin */
+    margin-top: 10px; 
+    margin-left: 0; 
   }
   .signup{
     display: none;
+  }
+}
+
+/* Pages */
+.pages {
+  width: 100%; 
+  padding: 20px; 
+  background-color: var(--neutral-color); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+  .pages {
+    padding: 10px; 
   }
 }
