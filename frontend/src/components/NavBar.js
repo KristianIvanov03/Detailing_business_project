@@ -1,7 +1,7 @@
 const NavBar = () => {
     return (
         <header>
-            <div>
+            <div className="logo">
                 <h2>Revive & Shine <span>Detailing</span></h2>
             </div>
             <nav>
@@ -12,7 +12,7 @@ const NavBar = () => {
                     <li>Appoint hour</li>
                 </ul>
             </nav>
-            <div>
+            <div className="signup">
                 <button>Sign Up</button>
                 <button>Log In</button>
             </div>

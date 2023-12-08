@@ -10,3 +10,84 @@
   --neutral-color: #ecf0f1;
   --dark-gray: #2c3e50;
 }
+
+/* Navigational bar */
+header {
+  background-color: var(--primary-color); /* Dark Blue-Gray (Navbar Background Color) */
+  color: var(--neutral-color); /* Light Gray (Text color for navbar) */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex-grow: 1; /* Allow the logo to grow and take available space */
+}
+
+header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header span {
+  color: #3498db; /* Calming Blue (Secondary Color) - Apply the color to the span */
+}
+nav{
+  flex-grow: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav li:hover {
+  color: #3498db; /* Calming Blue (Secondary Color) - Change color on hover */
+}
+
+header button {
+  background-color: var(--accent-color); /* Bold Red (Button Background Color) */
+  color: var(--neutral-color); /* Light Gray (Text color for buttons) */
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+header button:hover {
+  background-color: #c0392b; /* Darker Red - Change background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    margin-top: 10px; /* Add some space above the navigation menu */
+    width: 100%; /* Make the navigation menu take full width */
+  }
+
+  .logo{
+    text-align: center;
+    border-bottom: 2px solid var(--dark-gray);
+  }
+
+  nav ul {
+    justify-content: center; /* Center the navigation items */
+  }
+
+  header button {
+    margin-top: 10px; /* Add some space above the buttons */
+    margin-left: 0; /* Remove the left margin */
+  }
+  .signup{
+    display: none;
+  }
+}
