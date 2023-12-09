@@ -75,7 +75,7 @@ header button:hover {
   background-color: #c0392b; 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   nav {
     margin-top: 10px; 
     width: 100%; 
@@ -96,6 +96,29 @@ header button:hover {
   }
   .signup{
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  .pages {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  nav {
+    margin-top: 10px; /* Add some space above the navigation menu */
+    width: 100%; /* Make the navigation menu take full width */
+  }
+
+  nav ul {
+    justify-content: center; /* Center the navigation items */
+  }
+
+  .signup {
+    margin-top: 10px; /* Add some space above the buttons */
   }
 }
 
