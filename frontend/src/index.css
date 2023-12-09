@@ -134,3 +134,91 @@ header button:hover {
     padding: 10px; 
   }
 }
+
+/* Home Page*/
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for each section */
+section {
+  margin-bottom: 30px;
+}
+
+/* Styling for the hero section */
+.hero-section {
+  background: #3498db; /* Calming Blue (Background color) */
+  color: #ecf0f1; /* Light Gray (Text color) */
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Styling for other sections */
+h2 {
+  font-size: 28px;
+  color: #34495e; /* Dark Blue-Gray (Heading color) */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #e74c3c; /* Bold Red (Button Background Color) */
+  color: #ecf0f1; /* Light Gray (Text color for buttons) */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+button:hover {
+  background-color: #c0392b; /* Darker Red - Change background color on hover */
+}
+
+/* Styling for social media icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Responsive design - adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .home-page {
+    padding: 10px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
