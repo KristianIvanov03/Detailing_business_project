@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTools, faCubes, faSmile } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add(faTools, faCubes, faSmile);
 
