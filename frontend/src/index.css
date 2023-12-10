@@ -11,9 +11,24 @@
   --dark-gray: #2c3e50;
 }
 
+.btn{
+  background-color: var(--accent-color); 
+  color: var(--neutral-color); 
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; 
+  font-size: 16px;
+}
+.btn:hover {
+  background-color: #c0392b; 
+}
+
 /* Navigational bar */
 header {
-  background-color: var(--primary-color); 
+  background-color: var(--dark-gray); 
   color: var(--neutral-color); 
   padding: 10px;
   display: flex;
@@ -28,7 +43,7 @@ header {
 
 header h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 36px;
   text-decoration: none;
   color: var(--neutral-color);
 }
@@ -42,7 +57,7 @@ header span {
 
 }
 nav{
-  flex-grow: 1;
+  flex-grow: 2;
 }
 nav ul {
   list-style: none;
@@ -54,6 +69,7 @@ nav li {
   cursor: pointer;
   font-weight: bold;
   transition: color 0.3s ease; 
+  font-size: 20px;
 }
 
 nav li:hover {
@@ -69,13 +85,14 @@ header button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease; 
+  font-size: 16px;
 }
 
 header button:hover {
   background-color: #c0392b; 
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1100px) {
   nav {
     margin-top: 10px; 
     width: 100%; 
@@ -99,126 +116,47 @@ header button:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    padding: 10px;
-  }
 
-  .pages {
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  nav {
-    margin-top: 10px; /* Add some space above the navigation menu */
-    width: 100%; /* Make the navigation menu take full width */
-  }
-
-  nav ul {
-    justify-content: center; /* Center the navigation items */
-  }
-
-  .signup {
-    margin-top: 10px; /* Add some space above the buttons */
-  }
-}
 
 /* Pages */
 .pages {
   width: 100%; 
-  padding: 20px; 
-  background-color: var(--neutral-color); 
+  padding: 40px; 
+  background-color: var(--primary-color); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 768px) {
   .pages {
-    padding: 10px; 
+    padding: 30px; 
   }
 }
 
 /* Home Page*/
-.home-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
-}
-
-/* Styling for each section */
-section {
-  margin-bottom: 30px;
-}
-
-/* Styling for the hero section */
 .hero-section {
-  background: #3498db; /* Calming Blue (Background color) */
-  color: #ecf0f1; /* Light Gray (Text color) */
-  padding: 40px;
+  position: relative;
+  background-image: url('https://i.ibb.co/pnJB7K2/image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
   text-align: center;
+  min-height: 400px;
+  padding: 80px;
+  border-radius: 40px;
 }
 
 .hero-section h1 {
-  font-size: 36px;
+  font-size: 46px;
   margin-bottom: 20px;
 }
 
 .hero-section p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-/* Styling for other sections */
-h2 {
-  font-size: 28px;
-  color: #34495e; /* Dark Blue-Gray (Heading color) */
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Styling for buttons */
-button {
-  background-color: #e74c3c; /* Bold Red (Button Background Color) */
-  color: #ecf0f1; /* Light Gray (Text color for buttons) */
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-}
-
-button:hover {
-  background-color: #c0392b; /* Darker Red - Change background color on hover */
-}
-
-/* Styling for social media icons */
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-/* Responsive design - adjust styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .home-page {
-    padding: 10px;
-  }
-
-  section {
-    margin-bottom: 20px;
-  }
-
-  button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-}
