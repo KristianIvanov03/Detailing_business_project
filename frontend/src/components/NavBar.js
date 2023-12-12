@@ -4,14 +4,14 @@ const NavBar = () => {
     return (
         <header>
             <div className="logo">
-                <Link><h2>Revive & Shine <span>Detailing</span></h2></Link>
+                <Link to="/"><h2>Revive & Shine <span>Detailing</span></h2></Link>
             </div>
             <nav>
                 <ul>
-                    <li>Services</li>
-                    <li>About us</li>
-                    <li>Contacts</li>
-                    <li>Appoint hour</li>
+                    <li><Link>Services</Link></li>
+                    <li><Link to="/aboutus">About us</Link></li>
+                    <li><Link>Contacts</Link></li>
+                    <li><Link>Appoint hour</Link></li>
                 </ul>
             </nav>
             <div className="signup">

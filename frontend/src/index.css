@@ -50,6 +50,8 @@ header h2 {
 
 header a{
   text-decoration: none;
+  color: white;
+  transition: color 0.3s ease; 
 }
 
 header span {
@@ -68,11 +70,10 @@ nav ul {
 nav li {
   cursor: pointer;
   font-weight: bold;
-  transition: color 0.3s ease; 
   font-size: 20px;
 }
 
-nav li:hover {
+nav li a:hover {
   color: #3498db; 
 }
 
