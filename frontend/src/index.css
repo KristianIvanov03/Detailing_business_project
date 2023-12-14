@@ -395,3 +395,112 @@ footer {
   }
 }
 
+/* FAQ.css */
+.faq-section {
+  padding: 40px 20px;
+  background-color: var(--secondary-color);
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin-bottom: 30px;
+  background-color: white;
+  border: 1px solid var(--primary-color); /* Add a border to create a box effect */
+  cursor: pointer;
+}
+
+
+.faq-list h3 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+
+.faq-list p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #34495e;
+  padding: 10px;
+  display: none; /* Initially hide the answer */
+}
+
+.faq-list li.active p {
+  border-top: 2px solid var(--primary-color);
+  display: block; /* Show the answer when the question is active */
+}
+
+/* FAQ.css */
+
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-list {
+  width: 40%; /* Adjust based on your design */
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item.active {
+  background-color: #f5f5f5;
+}
+
+.question {
+  padding: 10px;
+}
+
+.question h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #3498db;
+}
+
+.question p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #34495e;
+  display: none;
+}
+
+.faq-item.active .question p {
+  display: block;
+}
+
+.faq-image {
+  width: 52%; /* Adjust based on your design */
+}
+
+.faq-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .faq-image{
+    display: none;
+  }
+  .faq-list{
+    width:100%
+  }
+}

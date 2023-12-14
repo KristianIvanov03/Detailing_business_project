@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom"
 import WhyChooseUs from "../components/WhyChooseUs"
 import WhatWeOffer from "../components/WhatWeOffer"
+import FAQ from "../components/Faq"
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
           </section>
           <WhyChooseUs/>
           <WhatWeOffer/>
+          <FAQ/>
         </div>
       </div>
     )
