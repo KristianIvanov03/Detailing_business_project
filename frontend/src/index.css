@@ -398,15 +398,15 @@ footer {
 /* FAQ.css */
 .faq-section {
   padding: 40px 20px;
-  background-color: var(--secondary-color);
   margin-top: 50px;
+  border: 3px solid var(--secondary-color);
   border-radius: 30px;
 }
 
 .faq-section h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: white;
   font-size: 46px;
   font-weight: bold;
 }
@@ -418,7 +418,7 @@ footer {
 
 .faq-list li {
   margin-bottom: 30px;
-  background-color: white;
+  background-color: var(--secondary-color);
   border: 1px solid var(--primary-color); 
   cursor: pointer;
 }
@@ -470,7 +470,7 @@ footer {
 .question h3 {
   margin: 0;
   font-size: 18px;
-  color: #3498db;
+  color: #34495e;
 }
 
 .question p {
