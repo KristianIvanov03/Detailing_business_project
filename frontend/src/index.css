@@ -480,6 +480,7 @@ footer {
   display: none;
 }
 
+
 .faq-item.active .question p {
   display: block;
 }
@@ -500,5 +501,81 @@ footer {
   }
   .faq-list{
     width:100%
+  }
+}
+
+/* AboutUsPage.css */
+
+.about-us-page {
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.company-info,
+.team-section {
+  margin-bottom: 40px;
+}
+
+.company-info h2,
+.team-section h2,
+.mission-section h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.members{
+  display: flex;
+  justify-content: space-around;
+}
+
+.company-info p,
+.team-member p,
+.mission-section p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.team-member {
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+}
+
+.mission-section {
+  margin-bottom: 40px;
+}
+
+
+/* Add more styling as needed */
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .team-member img {
+    max-width: 100px;
   }
 }
