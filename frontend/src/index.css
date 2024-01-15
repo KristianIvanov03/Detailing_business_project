@@ -759,7 +759,7 @@ main{
   display: flex;
   justify-content: center;
 }
-.signup-page {
+.signup-page,.login-page {
   padding: 40px 20px;
   background-color: var(--neutral-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -767,9 +767,10 @@ main{
   margin-top: 50px;
   text-align: center;
   width: 50%;
+  margin-bottom: 20px;
 }
 
-.signup-page h2 {
+.signup-page,.login-page h2 {
   font-size: 28px;
   color: var(--primary-color);
   margin-bottom: 20px;
@@ -781,13 +782,13 @@ form {
   align-items: center;
 }
 
-.signup-page label {
+.signup-page,.login-page label {
   font-size: 18px;
   color: #555;
   margin-bottom: 5px;
 }
 
-.signup-page input {
+.signup-page,.login-page input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
