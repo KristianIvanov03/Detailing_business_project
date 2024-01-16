@@ -7,6 +7,8 @@ import Contacts from "./pages/Contacts";
 import Services from "./pages/Services";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
           </Routes>
         </div>
         <Footer/>
+        <ToastContainer />
       </BrowserRouter>
     </div>
   );
