@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const appointmentRoutes = require("./routes/appointments")
 const contactRouter = require("./routes/contact")
 const userRoutes = require("./routes/user")
+const templateRouter = require('./routes/template')
 
 //middlewares
 const app = express();
@@ -18,6 +19,7 @@ app.use((req, res, next) => {
 app.use('/api/appointment', appointmentRoutes)
 app.use("/api/contact", contactRouter)
 app.use("/api/user", userRoutes)
+app.use('/api/template', templateRouter)
 
 
 //database connection
