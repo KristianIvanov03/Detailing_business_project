@@ -76,6 +76,10 @@ nav li {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
+.signup{
+  display: flex;
+  align-items: center;
+}
 
 nav li a:hover {
   color: #3498db; 
@@ -499,7 +503,7 @@ footer {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .faq-image{
     display: none;
   }
@@ -534,6 +538,7 @@ footer {
 .members{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .company-info p,
@@ -634,7 +639,7 @@ textarea {
   margin-top: 6px;
 }
 
-button {
+.btn4 {
   margin-left: 40%;
   background-color: var(--accent-color);
   color: var(--neutral-color);
@@ -843,5 +848,92 @@ main {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
+/* Appointment.css */
+
+.appointment-page{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.appointment-page h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 100%;
+  gap: 20px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  min-width: 220px;
+  min-height: 300px;
+}
+
+.day-cell {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+.timeslot-cell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: 70%;
+}
+
+.timeslot-cell button {
+  padding: 10px;
+  width: 90%;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #267bb6;
+}
+
+/* Add more styling as needed */
+
+/* Appointment.css */
+
+
+/* Profile.css */
+
+
 
 

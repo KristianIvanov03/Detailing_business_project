@@ -20,8 +20,8 @@ const WhatWeOffer = () => {
               </div>
             </div>
           ))}
-          <button className='btn'>Explore More</button>
         </div>
+        <button className='btn'>Explore More</button>
       </section>
     );
   };

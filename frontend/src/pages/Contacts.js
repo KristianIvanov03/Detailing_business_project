@@ -55,7 +55,7 @@ const Contacts = () => {
             required></textarea>
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" className='btn4'>Submit</button>
         </form>
       </section>
 

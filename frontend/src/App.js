@@ -11,7 +11,6 @@ import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Appointment from "./pages/Appointment";
 import {useAuthContext} from './hooks/useAuthContext'
-import Profile from "./pages/Profile";
 
 function App() {
   const {user} = useAuthContext();
@@ -28,7 +27,6 @@ function App() {
             <Route path="/signup" element={<Signup/>}/>
             <Route path="login" element={<Login/>}/>
             <Route path="/appointment" element={!user ? <Login/> : <Appointment/>}/>
-            <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </div>
         <Footer/>
