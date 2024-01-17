@@ -18,7 +18,7 @@ const NavBar = () => {
                     <li><Link to ="/services">Services</Link></li>
                     <li><Link to="/aboutus">About us</Link></li>
                     <li><Link to="/contacts">Contacts</Link></li>
-                    <li><Link>Appoint hour</Link></li>
+                    <li><Link to="/appointment">Appoint hour</Link></li>
                 </ul>
             </nav>
             {!user && (
@@ -29,7 +29,7 @@ const NavBar = () => {
             )}
             {user && (
                 <div className="signup">
-                    <span>{user.email}</span>
+                    <p><Link to="/profile">{user.email}</Link></p>
                     <button onClick={handleClick}>Log out</button>
               </div>
             )}

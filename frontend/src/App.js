@@ -9,8 +9,12 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Appointment from "./pages/Appointment";
+import {useAuthContext} from './hooks/useAuthContext'
+import Profile from "./pages/Profile";
 
 function App() {
+  const {user} = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
@@ -23,6 +27,8 @@ function App() {
             <Route path="/services" element={<Services/>}/>
             <Route path="/signup" element={<Signup/>}/>
             <Route path="login" element={<Login/>}/>
+            <Route path="/appointment" element={!user ? <Login/> : <Appointment/>}/>
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </div>
         <Footer/>
